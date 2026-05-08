@@ -38,8 +38,9 @@ const Navbar = () => {
     { name: 'Home', href: '/', icon: <Home size={18} /> },
     { name: 'About', href: '/about', icon: <User size={18} /> },
     { name: 'Publications', href: '/publications', icon: <Settings size={18} /> },
-    { name: 'Event', href: '/event', icon: <Calendar size={18} /> },
-    { name: 'Blog', href: '/blog', icon: <FileText size={18} /> },
+    { name: 'Projects', href: '/projects', icon: <Settings size={18} /> },
+    { name: 'Media & Gallery', href: '/media', icon: <Calendar size={18} /> },
+    { name: 'Partnership', href: '/partnership', icon: <FileText size={18} /> },
     { name: 'Contact', href: '/contact', icon: <Mail size={18} /> },
   ];
 
@@ -63,7 +64,7 @@ const Navbar = () => {
         <div className="flex justify-between h-16 items-center">
           
           <Link href="/" className={`text-xl font-bold tracking-tight transition-colors ${textColor}`}>
-            CORNEA<span className="text-[#C99B3B]">.</span>
+            PROF. AM SADDIQ<span className="text-[#C99B3B]">.</span>
           </Link>
 
           {/* Desktop Navigation */}

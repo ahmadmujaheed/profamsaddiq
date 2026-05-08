@@ -20,7 +20,7 @@ const Footer = () => {
                 <span className="text-white font-black">C</span>
               </div>
               <span className="text-2xl font-black tracking-tighter text-white uppercase">
-                Cornea <span className="text-[#A67C2E]">Eye</span> Foundation
+                PROF <span className="text-[#A67C2E]">AM</span> SADDIQ
               </span>
             </div>
             <p className="text-sm leading-relaxed max-w-sm">
@@ -59,11 +59,11 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-[#A67C2E] shrink-0" />
-                <span>+234 800 EYE CARE</span>
+                <span>+234 800 PROF AM SADDIQ</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-[#A67C2E] shrink-0" />
-                <span className="hover:text-white cursor-pointer transition-colors">outreach@eyecarengo.org</span>
+                <span className="hover:text-white cursor-pointer transition-colors">profam@saddiq.org</span>
               </li>
             </ul>
           </div>
@@ -94,7 +94,7 @@ const Footer = () => {
         {/* Bottom Section: Copyright & Legal */}
         <div className="py-8 flex flex-col justify-between items-center gap-1">
           <div className="text-[11px] uppercase tracking-widest font-medium">
-            © {currentYear} EyeCare NGO. All Rights Reserved.
+            © {currentYear} Prof AM  Saddiq. All Rights Reserved.
           </div>
           
           <div className="flex items-center text-[11px] uppercase tracking-widest font-bold">
