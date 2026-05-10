@@ -20,8 +20,7 @@ const projects = [
   {
     year: "2022",
     title: "Soil Fertility Assessment of Selected Soils in Adamawa State",
-    organization:
-      "Federal Ministry of Agriculture & Rural Development",
+    organization: "Federal Ministry of Agriculture & Rural Development",
     category: "Soil Fertility & Food Security",
     description:
       "Conducted extensive soil fertility evaluation and nutrient assessment to support sustainable agricultural productivity and evidence-based land management strategies in Adamawa State.",
@@ -32,10 +31,8 @@ const projects = [
 
   {
     year: "2019",
-    title:
-      "Land Validation for Proposed NNPC Cassava-Fuel Ethanol Project",
-    organization:
-      "Nigerian National Petroleum Corporation (NNPC)",
+    title: "Land Validation for Proposed NNPC Cassava-Fuel Ethanol Project",
+    organization: "Nigerian National Petroleum Corporation (NNPC)",
     category: "Land Resource Management",
     description:
       "Participated in land suitability validation and agricultural assessment for the proposed cassava-based biofuel ethanol project in Kebbi State.",
@@ -59,8 +56,7 @@ const projects = [
   {
     year: "2015",
     title: "Oguma Sugar Project, Kogi State",
-    organization:
-      "Kenana Engineering & Technical Services West Africa Ltd.",
+    organization: "Kenana Engineering & Technical Services West Africa Ltd.",
     category: "Agricultural Development",
     description:
       "Participated in agricultural soil assessment and environmental evaluation for sugar production development initiatives.",
@@ -72,8 +68,7 @@ const projects = [
   {
     year: "2013 — 2014",
     title: "Zaria-Kala Kala Soil Survey Project",
-    organization:
-      "Kenana Engineering & Technical Services West Africa Ltd.",
+    organization: "Kenana Engineering & Technical Services West Africa Ltd.",
     category: "Soil Survey & Classification",
     description:
       "Conducted detailed soil surveys and classification studies for agricultural suitability and environmental sustainability assessments.",
@@ -84,8 +79,7 @@ const projects = [
 
   {
     year: "1990 — 2012",
-    title:
-      "Field Surveys for Governmental & Development Organizations",
+    title: "Field Surveys for Governmental & Development Organizations",
     organization: "World Bank, LEEMP & UNDP",
     category: "Development & Rural Agriculture",
     description:
@@ -133,22 +127,25 @@ const page = () => {
               Field Impact • Agricultural Development • Sustainability
             </span>
 
-            <h1 className="mt-6 text-5xl font-light text-white md:text-8xl">
+            <h1 className="mt-6 text-5xl font-bold text-white md:text-5xl">
               Projects & Field Impact
             </h1>
 
             <p className="mx-auto mt-8 max-w-4xl text-lg leading-relaxed text-slate-300 md:text-xl">
-              Practical agricultural initiatives, soil surveys, land
-              resource assessments, and sustainability-focused projects
-              contributing to food security, rural development, and
-              agricultural transformation across Nigeria.
+              Practical agricultural initiatives, soil surveys, land resource
+              assessments, and sustainability-focused projects contributing to
+              food security, rural development, and agricultural transformation
+              across Nigeria.
             </p>
 
-            <div className="mt-10 flex justify-center">
-              <ChevronDown
-                className="animate-bounce text-white"
-                size={32}
-              />
+            <div className="mt-12 flex justify-center">
+              <motion.div
+                animate={{ y: [0, 10, 0] }}
+                transition={{ repeat: Infinity, duration: 2 }}
+                className="rounded-full border border-white/20 p-4 backdrop-blur-sm"
+              >
+                <ChevronDown className="text-white" size={24} />
+              </motion.div>
             </div>
           </motion.div>
         </div>
@@ -158,33 +155,28 @@ const page = () => {
       {/* INTRO SECTION */}
       {/* ====================================================== */}
       <section className="relative z-20 -mt-12 px-8 md:px-20">
-        <div className="rounded-[36px] border border-slate-100 bg-white p-10 shadow-2xl md:p-16">
+        <div className="border border-slate-100 bg-white p-10 md:p-16">
           <div className="flex flex-col gap-10 md:flex-row md:items-center md:justify-between">
+            <div className="order-first flex h-28 w-28 shrink-0 items-center justify-center rounded-full bg-[#C99B3B]/10 md:order-last">
+              <Tractor className="text-[#C99B3B]" size={42} />
+            </div>
             <div className="max-w-4xl">
               <span className="text-xs font-bold uppercase tracking-[0.3em] text-[#C99B3B]">
                 Practical Agricultural Leadership
               </span>
 
-              <h2 className="mt-5 text-4xl font-light leading-tight md:text-6xl">
-                Bridging Research with Real-World Agricultural
-                Application
+              <h2 className="mt-5 text-4xl font-light leading-tight md:text-6xl text-black">
+                Bridging Research with Real-World Agricultural Application
               </h2>
 
               <p className="mt-8 text-lg leading-relaxed text-slate-500">
-                Prof. A.M. Saddiq’s field projects extend beyond
-                academic research into practical agricultural
-                development, land resource management, irrigation
-                systems, food security initiatives, and sustainability
-                programs involving government agencies, international
-                development organizations, and agricultural industries.
+                Prof. A.M. Saddiq’s field projects extend beyond academic
+                research into practical agricultural development, land resource
+                management, irrigation systems, food security initiatives, and
+                sustainability programs involving government agencies,
+                international development organizations, and agricultural
+                industries.
               </p>
-            </div>
-
-            <div className="flex h-28 w-28 items-center justify-center rounded-full bg-[#C99B3B]/10">
-              <Tractor
-                className="text-[#C99B3B]"
-                size={42}
-              />
             </div>
           </div>
         </div>
@@ -222,7 +214,7 @@ const page = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="rounded-3xl border border-slate-100 bg-white p-8 text-center shadow-sm"
+              className="border border-slate-100 bg-white p-8 text-center"
             >
               <h3 className="text-4xl font-bold text-[#C99B3B]">
                 {item.value}
@@ -245,7 +237,7 @@ const page = () => {
             Major Projects & Initiatives
           </span>
 
-          <h2 className="mt-4 text-4xl font-light md:text-6xl">
+          <h2 className="mt-4 text-4xl font-light md:text-6xl text-black">
             Agricultural Development Portfolio
           </h2>
         </div>
@@ -258,7 +250,7 @@ const page = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.05 }}
-              className="group rounded-[36px] border border-slate-100 bg-white p-10 shadow-sm transition-all hover:border-[#C99B3B]/20 hover:shadow-xl md:p-14"
+              className="group border border-slate-100 bg-white p-10 shadow-sm transition-all hover:border-[#C99B3B]/20 hover:shadow-xl md:p-14"
             >
               <div className="flex flex-col gap-10 md:flex-row md:justify-between">
                 {/* LEFT */}
@@ -277,20 +269,15 @@ const page = () => {
                   </div>
 
                   {/* TITLE */}
-                  <h3 className="text-3xl font-light leading-tight transition-colors group-hover:text-[#C99B3B]">
+                  <h3 className="text-3xl text-slate-500 font-light leading-tight transition-colors group-hover:text-[#C99B3B]">
                     {project.title}
                   </h3>
 
                   {/* ORG */}
                   <div className="mt-5 flex items-center gap-3 text-slate-500">
-                    <Building2
-                      size={18}
-                      className="text-[#C99B3B]"
-                    />
+                    <Building2 size={18} className="text-[#C99B3B]" />
 
-                    <span className="font-medium">
-                      {project.organization}
-                    </span>
+                    <span className="font-medium">{project.organization}</span>
                   </div>
 
                   {/* DESCRIPTION */}
@@ -310,9 +297,7 @@ const page = () => {
                           Project Impact
                         </h4>
 
-                        <p className="mt-3 text-slate-600">
-                          {project.impact}
-                        </p>
+                        <p className="mt-3 text-slate-600">{project.impact}</p>
                       </div>
                     </div>
                   </div>
@@ -346,8 +331,7 @@ const page = () => {
             </span>
 
             <h2 className="mt-6 text-4xl font-light leading-tight md:text-6xl">
-              Sustainable Agriculture for Food Security & Rural
-              Development
+              Sustainable Agriculture for Food Security & Rural Development
             </h2>
           </motion.div>
 
@@ -359,20 +343,18 @@ const page = () => {
             className="space-y-8 text-lg leading-relaxed text-slate-400"
           >
             <p>
-              Through field-based agricultural projects, soil
-              assessments, and development-focused initiatives, Prof.
-              A.M. Saddiq has contributed to sustainable farming
-              systems that support agricultural productivity,
-              environmental resilience, and rural economic
+              Through field-based agricultural projects, soil assessments, and
+              development-focused initiatives, Prof. A.M. Saddiq has contributed
+              to sustainable farming systems that support agricultural
+              productivity, environmental resilience, and rural economic
               development.
             </p>
 
             <p>
               His work integrates scientific research with practical
-              implementation strategies for soil management,
-              irrigation systems, fertilizer efficiency, and climate
-              adaptation in both smallholder and commercial farming
-              environments.
+              implementation strategies for soil management, irrigation systems,
+              fertilizer efficiency, and climate adaptation in both smallholder
+              and commercial farming environments.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-4">
@@ -398,29 +380,25 @@ const page = () => {
       {/* COLLABORATION SECTION */}
       {/* ====================================================== */}
       <section className="px-8 py-28 md:px-20">
-        <div className="rounded-[40px] bg-[#fcf7ec] p-14 md:p-24">
+        <div className=" bg-[#fcf7ec] p-14 md:p-24">
           <div className="mx-auto max-w-5xl text-center">
-            <MapPin
-              className="mx-auto mb-8 text-[#C99B3B]"
-              size={42}
-            />
+            <MapPin className="mx-auto mb-8 text-[#C99B3B]" size={42} />
 
             <span className="text-xs font-bold uppercase tracking-[0.3em] text-[#C99B3B]">
               Collaboration & Partnerships
             </span>
 
-            <h2 className="mt-6 text-4xl font-light leading-tight md:text-6xl">
-              Open to Agricultural Development Partnerships &
-              Sustainability Initiatives
+            <h2 className="mt-6 text-4xl text-black font-light leading-tight md:text-6xl">
+              Open to Agricultural Development Partnerships & Sustainability
+              Initiatives
             </h2>
 
             <p className="mx-auto mt-10 max-w-4xl text-lg leading-relaxed text-slate-600">
-              Prof. A.M. Saddiq welcomes collaboration with
-              agricultural institutions, government agencies,
-              development organizations, sustainability initiatives,
-              research bodies, and food security programs focused on
-              practical agricultural transformation and rural
-              development.
+              Prof. A.M. Saddiq welcomes collaboration with agricultural
+              institutions, government agencies, development organizations,
+              sustainability initiatives, research bodies, and food security
+              programs focused on practical agricultural transformation and
+              rural development.
             </p>
 
             <button className="mt-12 inline-flex items-center gap-3 rounded-full bg-slate-950 px-8 py-5 text-xs font-bold uppercase tracking-widest text-white transition-all hover:bg-[#C99B3B]">

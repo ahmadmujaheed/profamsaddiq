@@ -63,8 +63,7 @@ const galleryImages = [
 
 const videos = [
   {
-    title:
-      "Sustainable Soil Fertility Management & Food Security",
+    title: "Sustainable Soil Fertility Management & Food Security",
     category: "Keynote Presentation",
     year: "2024",
     image:
@@ -72,8 +71,7 @@ const videos = [
   },
 
   {
-    title:
-      "Climate-Smart Agriculture for Sustainable Crop Production",
+    title: "Climate-Smart Agriculture for Sustainable Crop Production",
     category: "Research Seminar",
     year: "2023",
     image:
@@ -81,8 +79,7 @@ const videos = [
   },
 
   {
-    title:
-      "Agricultural Development & Soil Sustainability in Africa",
+    title: "Agricultural Development & Soil Sustainability in Africa",
     category: "Public Lecture",
     year: "2022",
     image:
@@ -137,22 +134,25 @@ const page = () => {
               Conferences • Field Activities • Research Engagements
             </span>
 
-            <h1 className="mt-6 text-5xl font-light text-white md:text-8xl">
+            <h1 className="mt-6 text-5xl font-bold text-white md:text-5xl">
               Media & Field Activities
             </h1>
 
             <p className="mx-auto mt-8 max-w-4xl text-lg leading-relaxed text-slate-300 md:text-xl">
-              Documenting agricultural fieldwork, research activities,
-              academic conferences, sustainability initiatives,
-              institutional engagement, and practical contributions to
-              food security and sustainable agriculture.
+              Documenting agricultural fieldwork, research activities, academic
+              conferences, sustainability initiatives, institutional engagement,
+              and practical contributions to food security and sustainable
+              agriculture.
             </p>
 
-            <div className="mt-10 flex justify-center">
-              <ChevronDown
-                className="animate-bounce text-white"
-                size={32}
-              />
+            <div className="mt-12 flex justify-center">
+              <motion.div
+                animate={{ y: [0, 10, 0] }}
+                transition={{ repeat: Infinity, duration: 2 }}
+                className="rounded-full border border-white/20 p-4 backdrop-blur-sm"
+              >
+                <ChevronDown className="text-white" size={24} />
+              </motion.div>
             </div>
           </motion.div>
         </div>
@@ -162,16 +162,19 @@ const page = () => {
       {/* INTRO SECTION */}
       {/* ====================================================== */}
       <section className="relative z-20 -mt-12 px-8 md:px-20">
-        <div className="rounded-[36px] border border-slate-100 bg-white p-10 shadow-2xl md:p-16">
+        <div className="border border-slate-100 bg-white p-10 md:p-16">
           <div className="flex flex-col gap-10 md:flex-row md:items-center md:justify-between">
+            <div className="order-first flex h-28 w-28 shrink-0 items-center justify-center rounded-full bg-[#C99B3B]/10 md:order-last">
+              <Camera className="text-[#C99B3B]" size={42} />
+            </div>
             <div className="max-w-4xl">
               <span className="text-xs font-bold uppercase tracking-[0.3em] text-[#C99B3B]">
                 Research, Outreach & Development
               </span>
 
-              <h2 className="mt-5 text-4xl font-light leading-tight md:text-6xl">
-                Visual Documentation of Agricultural Research &
-                Sustainability Impact
+              <h2 className="mt-5 text-4xl font-light leading-tight md:text-6xl text-black">
+                Visual Documentation of Agricultural Research & Sustainability
+                Impact
               </h2>
 
               <p className="mt-8 text-lg leading-relaxed text-slate-500">
@@ -179,16 +182,9 @@ const page = () => {
                 participation, agricultural development initiatives,
                 institutional collaborations, public lectures, and
                 sustainability-focused engagements showcasing practical
-                contributions to soil science, food security, and
-                agricultural transformation.
+                contributions to soil science, food security, and agricultural
+                transformation.
               </p>
-            </div>
-
-            <div className="flex h-28 w-28 items-center justify-center rounded-full bg-[#C99B3B]/10">
-              <Camera
-                className="text-[#C99B3B]"
-                size={42}
-              />
             </div>
           </div>
         </div>
@@ -207,13 +203,13 @@ const page = () => {
               viewport={{ once: true }}
               transition={{ delay: i * 0.05 }}
               whileHover={{ y: -8 }}
-              className="rounded-[32px] border border-slate-100 bg-white p-8 text-center shadow-sm transition-all hover:border-[#C99B3B]/20 hover:shadow-xl"
+              className="border border-slate-100 bg-white p-8 text-center transition-all hover:border-gray-300 hover:shadow-sm cursor-pointer"
             >
               <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#C99B3B]/10 text-[#C99B3B]">
                 {item.icon}
               </div>
 
-              <h3 className="text-xl font-medium leading-snug">
+              <h3 className="text-xl font-medium leading-snug text-black">
                 {item.title}
               </h3>
             </motion.div>
@@ -252,16 +248,15 @@ const page = () => {
               </span>
 
               <h2 className="mt-6 text-4xl font-light leading-tight">
-                Advancing Sustainable Agricultural Solutions Through
-                Field-Based Research
+                Advancing Sustainable Agricultural Solutions Through Field-Based
+                Research
               </h2>
 
               <p className="mt-8 text-lg leading-relaxed text-slate-400">
-                Prof. A.M. Saddiq’s field engagements combine
-                scientific research with practical agricultural
-                implementation, focusing on soil fertility management,
-                climate-smart agriculture, food security, irrigation
-                systems, and sustainable farming practices.
+                Prof. A.M. Saddiq’s field engagements combine scientific
+                research with practical agricultural implementation, focusing on
+                soil fertility management, climate-smart agriculture, food
+                security, irrigation systems, and sustainable farming practices.
               </p>
 
               <div className="mt-10 flex items-center gap-4">
@@ -293,7 +288,7 @@ const page = () => {
             Gallery
           </span>
 
-          <h2 className="mt-4 text-4xl font-light md:text-6xl">
+          <h2 className="mt-4 text-4xl font-light md:text-6xl text-black">
             Conferences, Research & Field Activities
           </h2>
         </div>
@@ -307,7 +302,7 @@ const page = () => {
               viewport={{ once: true }}
               transition={{ delay: i * 0.05 }}
               whileHover={{ y: -8 }}
-              className="group overflow-hidden rounded-[32px] border border-slate-100 bg-white shadow-sm transition-all hover:border-[#C99B3B]/20 hover:shadow-2xl"
+              className="group overflow-hidden bg-white transition-all hover:border-[#C99B3B]/20 hover:shadow-sm cursor-pointer"
             >
               {/* IMAGE */}
               <div className="relative h-80 overflow-hidden">
@@ -326,7 +321,7 @@ const page = () => {
                   {item.category}
                 </span>
 
-                <h3 className="mt-5 text-2xl font-light leading-snug transition-colors group-hover:text-[#C99B3B]">
+                <h3 className="mt-5 text-gray-600 text-2xl font-light leading-snug transition-colors group-hover:text-[#C99B3B]">
                   {item.title}
                 </h3>
               </div>
@@ -358,7 +353,7 @@ const page = () => {
               viewport={{ once: true }}
               transition={{ delay: i * 0.05 }}
               whileHover={{ y: -8 }}
-              className="group overflow-hidden rounded-[32px] border border-white/10 bg-white/5 backdrop-blur-sm transition-all hover:bg-white/10"
+              className="group overflow-hidden border border-white/10 backdrop-blur-lg transition-all"
             >
               {/* IMAGE */}
               <div className="relative h-72 overflow-hidden">
@@ -372,11 +367,7 @@ const page = () => {
 
                 <div className="absolute inset-0 flex items-center justify-center">
                   <button className="flex h-20 w-20 items-center justify-center rounded-full bg-white/10 backdrop-blur-md transition-all hover:scale-110 hover:bg-[#C99B3B]">
-                    <Play
-                      className="ml-1 text-white"
-                      size={28}
-                      fill="white"
-                    />
+                    <Play className="ml-1 text-white" size={28} fill="white" />
                   </button>
                 </div>
               </div>
@@ -413,7 +404,7 @@ const page = () => {
       {/* PHILOSOPHY SECTION */}
       {/* ====================================================== */}
       <section className="px-8 py-32 md:px-20">
-        <div className="rounded-[40px] bg-[#fcf7ec] p-14 md:p-24">
+        <div className=" bg-[#fcf7ec] p-14 md:p-24">
           <div className="grid gap-20 md:grid-cols-2">
             {/* LEFT */}
             <div>
@@ -421,28 +412,27 @@ const page = () => {
                 <GraduationCap size={30} />
               </div>
 
-              <h2 className="text-4xl font-light leading-tight md:text-6xl">
-                “Agricultural research becomes more impactful when
-                knowledge is shared through engagement, collaboration,
-                and practical field application.”
+              <h2 className="text-4xl font-light text-black leading-tight md:text-3xl">
+                “Agricultural research becomes more impactful when knowledge is
+                shared through engagement, collaboration, and practical field
+                application.”
               </h2>
             </div>
 
             {/* RIGHT */}
-            <div className="space-y-8 text-lg leading-relaxed text-slate-600">
+            <div className="space-y-2 text-lg leading-relaxed text-slate-600">
               <p>
-                Through conferences, workshops, institutional
-                activities, and field-based agricultural engagements,
-                Prof. A.M. Saddiq continues to promote practical
-                approaches to soil sustainability, food security,
-                agricultural innovation, and environmental resilience.
+                Through conferences, workshops, institutional activities, and
+                field-based agricultural engagements, Prof. A.M. Saddiq
+                continues to promote practical approaches to soil
+                sustainability, food security, agricultural innovation, and
+                environmental resilience.
               </p>
 
               <p>
-                His work emphasizes the importance of connecting
-                scientific knowledge with community impact, sustainable
-                farming systems, and evidence-based agricultural
-                development strategies.
+                His work emphasizes the importance of connecting scientific
+                knowledge with community impact, sustainable farming systems,
+                and evidence-based agricultural development strategies.
               </p>
 
               <div className="flex flex-wrap gap-4 pt-4">
@@ -469,26 +459,22 @@ const page = () => {
       {/* FINAL CTA */}
       {/* ====================================================== */}
       <section className="px-8 pb-32 md:px-20">
-        <div className="rounded-[40px] bg-slate-950 p-14 text-center text-white md:p-24">
-          <Mic
-            className="mx-auto mb-8 text-[#C99B3B]"
-            size={42}
-          />
+        <div className="bg-slate-950 p-14 text-center text-white md:p-24">
+          <Mic className="mx-auto mb-8 text-[#C99B3B]" size={42} />
 
           <span className="text-xs font-bold uppercase tracking-[0.3em] text-[#C99B3B]">
             Conferences & Institutional Engagements
           </span>
 
-          <h2 className="mx-auto mt-6 max-w-5xl text-4xl font-light leading-tight md:text-6xl">
+          <h2 className="mx-auto mt-6 max-w-5xl text-4xl font-light leading-tight md:text-4xl">
             Available for Academic Conferences, Agricultural Dialogue &
             Sustainability Initiatives
           </h2>
 
           <p className="mx-auto mt-10 max-w-4xl text-lg leading-relaxed text-slate-400">
-            Open to keynote presentations, institutional seminars,
-            agricultural development forums, sustainability programs,
-            food security dialogue, and collaborative research
-            engagements.
+            Open to keynote presentations, institutional seminars, agricultural
+            development forums, sustainability programs, food security dialogue,
+            and collaborative research engagements.
           </p>
 
           <button className="mt-12 inline-flex items-center gap-3 rounded-full bg-[#C99B3B] px-8 py-5 text-xs font-bold uppercase tracking-widest text-white transition-all hover:bg-[#b8892f]">

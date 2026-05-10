@@ -341,7 +341,7 @@ const page = () => {
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.2 }}
-                className="max-w-4xl text-4xl font-light leading-tight md:text-7xl"
+                className="max-w-4xl text-2xl font-light leading-tight md:text-4xl"
               >
                 {profileSlides[index].title}
               </motion.h1>
@@ -490,7 +490,7 @@ const page = () => {
             <motion.div
               whileHover={{ y: -10 }}
               key={i}
-              className="rounded-2xl border border-slate-100 bg-white p-10 shadow-sm transition-all"
+              className="border border-slate-100 bg-white p-10 transition-all"
             >
               {item.icon}
 
@@ -513,12 +513,12 @@ const page = () => {
         <div className="flex flex-col items-center gap-20 md:flex-row">
           {/* IMAGE */}
           <div className="relative md:w-1/2">
-            <div className="absolute -left-10 -top-10 h-40 w-40 rounded-full bg-[#C99B3B]/10 blur-3xl" />
+            <div className="absolute -left-10 -top-10 h-40 w-40 bg-[#C99B3B]/10 blur-3xl" />
 
             <img
               src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80"
               alt="Professor of Soil Science"
-              className="relative z-10 aspect-[4/5] w-full rounded-2xl object-cover shadow-2xl"
+              className="relative z-10 aspect-4/5 w-full object-cover"
             />
           </div>
 
@@ -676,7 +676,7 @@ const page = () => {
             size={48}
           />
 
-          <h2 className="mb-8 text-3xl font-light md:text-5xl">
+          <h2 className="mb-8 text-3xl font-light md:text-3xl">
             "Healthy soils are the foundation of food security,
             economic stability, and sustainable agricultural
             development."

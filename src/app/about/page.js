@@ -238,7 +238,7 @@ const page = () => {
               Sustainable Agriculture • Soil Health • Food Security
             </span>
 
-            <h1 className="mt-6 text-5xl font-light text-white md:text-8xl">
+            <h1 className="mt-6 text-5xl text-white md:text-5xl font-bold">
               About Prof. A.M. Saddiq
             </h1>
 
@@ -272,9 +272,9 @@ const page = () => {
             The Background
           </span>
 
-          <h1 className="mt-4 text-5xl font-light leading-tight md:text-7xl">
+          <h1 className="mt-4 text-5xl font-light leading-tight md:text-5xl">
             Driven by <br />
-            <span className="italic text-[#C99B3B]">
+            <span className="text-[#C99B3B]">
               Sustainable Agricultural Transformation.
             </span>
           </h1>
@@ -309,7 +309,7 @@ const page = () => {
           <img
             src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80"
             alt="Professor of Soil Science"
-            className="h-[650px] w-full rounded-2xl object-cover shadow-2xl"
+            className="h-162.5 w-full object-cover"
           />
         </motion.div>
       </section>
@@ -347,7 +347,7 @@ const page = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.2 }}
-              className="rounded-3xl border border-white/10 bg-white/5 p-10 backdrop-blur-sm transition-all hover:bg-white/10"
+              className="border border-white/10 bg-white/5 p-10 backdrop-blur-sm transition-all hover:bg-white/10"
             >
               <div className="mb-6 text-[#C99B3B]">
                 {item.icon}
@@ -411,7 +411,7 @@ const page = () => {
             <motion.div
               whileHover={{ y: -10 }}
               key={i}
-              className="rounded-3xl border border-slate-100 bg-white p-10 shadow-sm transition-all"
+              className="border border-slate-100 bg-white p-10 transition-all"
             >
               {item.icon}
 
@@ -528,7 +528,7 @@ const page = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="rounded-3xl border border-white/10 bg-white/5 p-12"
+            className="border border-white/10 bg-white/5 p-12"
           >
             <div className="mb-6 text-[#C99B3B]">
               <Users size={40} />
@@ -554,7 +554,7 @@ const page = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="rounded-3xl border border-white/10 bg-white/5 p-12"
+            className="border border-white/10 bg-white/5 p-12"
           >
             <div className="mb-6 text-[#C99B3B]">
               <GraduationCap size={40} />
@@ -587,7 +587,7 @@ const page = () => {
           <div className="md:w-1/2">
             <div className="mb-8 h-1 w-16 rounded-full bg-[#C99B3B]" />
 
-            <h2 className="text-3xl font-light leading-snug md:text-5xl">
+            <h2 className="text-3xl font-light leading-snug md:text-3xl">
               "Agricultural research must create practical solutions
               that improve soil health, increase food production, and
               positively impact farming communities."
